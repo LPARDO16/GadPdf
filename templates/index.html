@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exportar PDF a Excel</title>
+</head>
+<body style="background-image: url('https://img.freepik.com/foto-gratis/oficina-documentos-cuentas-dinero_144627-33574.jpg?size=626&ext=jpg&ga=GA1.2.150417274.1693344009&semt=ais'); background-repeat: no-repeat; background-size: cover;display:grid;place-items: center;">
+    <div style="width: 60%; height: 100%; background-color: rgba(0, 0, 0, 0.5);display:grid;place-items: center;margin-top:10%;border-radius:10px">
+        <div style="background-color: #fff; margin:50px; border-radius:10px;width:65%;height:50%">
+            <div style="background-color: #fff;text-align:center">
+                <h1>Exportar PDF a Excel</h1>
+            </div>
+            <form method="POST" action="/upload" enctype="multipart/form-data">
+                <div style="margin-left:75px">
+                    <label for="pdf_file">Seleccionar un PDF:</label>
+                    <input type="file" name="pdf_file" id="pdf_file" accept=".pdf">
+                    <div>
+                        <br>
+                        <label for="excel_filename">Nombre del archivo Excel:</label>
+                        <input type="text" name="excel_filename" id="excel_filename" required>
+                        <br>
+                    </div>
+                </div>
+                <div style="margin-top:20px;width:100%;text-align:center">
+                        <button type="submit">Exportar a Excel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
